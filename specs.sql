@@ -59,5 +59,5 @@ Efraim Greenberg, 845-854-9785, 2023-02-02, Friday, 7:50 am, 8,  8:55 am, ?, $18
 Simcha Bunin, 206-768-5261, 2023-01-29, Sunday, 10:20 am, --,  11:35 am, ?, --
 Yisroel Carcoos, 845-245-8230, 2023-01-29, Sunday, 11:15 am, --,  12:30 pm, ?, --
 
-Take any 3 names and add them in at least 16 times in the past 30 days to make them regulars
+Take any 3 names and add them in at least 16 times (with different dates) in the past 30 days to make them regulars
 */
