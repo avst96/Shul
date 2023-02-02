@@ -5,8 +5,8 @@ approach people about committing to a minyan, people find it too hard. Instead I
 figure out my minyanim off that.
 
 I want to record the name of every person, telephone #, time he walked in to shul, which minyan he davened in, time he left shul (this info will be kept strictly confidential).
-I also need the date, day of week, and a column showing if he is a regular in the shul. A regular means that he is in shul more then %60 of davening days. As long as I am anyways setting 
-up a database, I would like to add in a column showing if that person brought an aliya, and if yes for how much.
+I also need the date, day of week, and a column showing if he is a regular in the shul. A regular means that he is in shul more then 16 weekdays, in the past 30 days. 
+As long as I am anyways setting up a database, I would like to add in a column showing if that person brought an aliya, and if yes for how much.
 
 Questions: 
 1) Is there a start time and end time for the database?
@@ -45,13 +45,15 @@ Reports:
 
 Sample Data:
 Name, Telephone, Date, Day, Time in, Daven in minyan, Time out, Is regular, Brought an aliya
-Avrum Y. Tenenbaum, 845-857-6585, 2023-02-02, Thursday, 7:00 am, 7,  8:30 am, Yes, $40
-Yankov Zitorski, 845-245-8585, 2023-02-02, Thursday, 7:15 am, 8,  9:20 am, No, $10
-Shmuel Fuerst, 773-221-5260, 2023-02-02, Thursday, 5:45 am, 6, 7:10 am, Yes, --
-David Shnell, 212-585-1285, 2023-02-02, Thursday, 7:20 am, 8,  8:50 am, Yes, --
-Avrum Zirkin, 506-757-8243, 2023-02-02, Thursday, 9:10 am, 9,  10:30 am, Yes, $26
-Shimon Fuchs, 845-524-4253, 2023-02-02, Thursday, 8:15 am, 9,  9:05 am, Yes, --
-Burech Klein, 845-857-2569, 2023-02-02, Thursday, 6:40 am, 7,  8:20 am, No, --
-Yisroel A. Jaccob, 845-425-7597, 2023-02-02, Thursday, 8:25 am, 9,  9:45 am, Yes, --
-Efraim Greenberg, 845-854-9785, 2023-02-02, Friday, 7:50 am, 8,  8:55 am, Yes, $18
+Avrum Y. Tenenbaum, 845-857-6585, 2023-02-02, Thursday, 7:00 am, 7,  8:30 am, ?, $40
+Yankov Zitorski, 845-245-8585, 2023-02-02, Thursday, 7:15 am, 8,  9:20 am, ?, $10
+Shmuel Fuerst, 773-221-5260, 2023-02-02, Thursday, 5:45 am, 6, 7:10 am, ?, --
+David Shnell, 212-585-1285, 2023-02-02, Thursday, 7:20 am, 8,  8:50 am, ?, --
+Avrum Zirkin, 506-757-8243, 2023-02-02, Thursday, 9:10 am, 9,  10:30 am, ?, $26
+Shimon Fuchs, 845-524-4253, 2023-02-02, Thursday, 8:15 am, 9,  9:05 am, ?, --
+Burech Klein, 845-857-2569, 2023-02-02, Thursday, 6:40 am, 7,  8:20 am, ?, --
+Yisroel A. Jaccob, 845-425-7597, 2023-02-02, Thursday, 8:25 am, 9,  9:45 am, ?, --
+Efraim Greenberg, 845-854-9785, 2023-02-02, Friday, 7:50 am, 8,  8:55 am, ?, $18
+
+Take any 3 names and add them in at least 16 times in the past 30 days to make them regulars
 */
