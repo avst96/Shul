@@ -29,6 +29,8 @@ Questions:
 6) Can a person daven in a minyan starting before he walked in?
     A: Unfortunately, yes
 
+7) Can a person come into shul without joining a minyan?
+    A: Yes, those are prime targets for new minyanim
 
 Reports:
 1) On Sunday only how many people where there in shul that arrived between 10 and 11
@@ -38,7 +40,7 @@ Reports:
 7) How many people were in shul for over 2 hours, sort by day of week and only include regulars
 8) How long did the avg regular wait around until is minyan started. Also show the max and min. Do not count anyone that joined a minyan which stated before he arrived
 9) Show a list of people that waited more then 30 min for there minyan to start, show the name and minyan
-10) Show a list of people that joined a miyan that started before they arrived. I dont need the name only time arrived and minyan joined.
+10) Show a list of people that joined a miyan that started before they arrived or didnt join a minyan at all. I dont need the name only time arrived and minyan joined.
 11) Show the amount of money that came in today
 12) Show the top ten spenders on Aliyas 
 
@@ -54,6 +56,8 @@ Shimon Fuchs, 845-524-4253, 2023-02-02, Thursday, 8:15 am, 9,  9:05 am, ?, --
 Burech Klein, 845-857-2569, 2023-02-02, Thursday, 6:40 am, 7,  8:20 am, ?, --
 Yisroel A. Jaccob, 845-425-7597, 2023-02-02, Thursday, 8:25 am, 9,  9:45 am, ?, --
 Efraim Greenberg, 845-854-9785, 2023-02-02, Friday, 7:50 am, 8,  8:55 am, ?, $18
+Simcha Bunin, 206-768-5261, 2023-01-29, Sunday, 10:20 am, --,  11:35 am, ?, --
+Yisroel Carcoos, 845-245-8230, 2023-01-29, Sunday, 11:15 am, --,  12:30 pm, ?, --
 
 Take any 3 names and add them in at least 16 times in the past 30 days to make them regulars
 */
