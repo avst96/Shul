@@ -34,9 +34,9 @@ group by datepart(hour, TimeIn)
 order by datepart(hour, TimeIn)
 
 --7) How many people were in shul for over 2 hours, sort by day of week and only include regulars
- select m.FirstName, m.LastName, m.DayOfWeek, count(*) 
+ select m.FirstName, m.LastName, m.DayOfWeek, NumOfPeopleInShulOver2Hours = count(*) 
  from Minyan m  where datediff(minute, TimeIn, TimeOut) > 120 
- and datediff(day,TimeIn, getdate()) < 60 
+ and datediff(day,TimeIn, getdate()) < 30 
  group by m.FirstName, m.LastName, m.DayOfWeek 
  having count(*) > 15 
  order by m.DayOfWeek
@@ -61,7 +61,7 @@ select sum(m.Aliya)
 from Minyan m 
 where year(m.TimeIn) = year(getdate()) and month(m.TimeIn) = month(getdate()) and day(m.TimeIn) = day(getdate())
 --12) Show the top ten spenders on Aliyas 
-select top 10 m.FirstName, m.LastName, sum(m.Aliya)
+select top 10 m.FirstName, m.LastName, Spent = sum(m.Aliya)
 from Minyan m
 group by m.FirstName, m.LastName
 order by sum(m.Aliya) desc
