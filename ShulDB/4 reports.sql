@@ -34,13 +34,12 @@ group by datepart(hour, TimeIn)
 order by datepart(hour, TimeIn)
 
 --7) How many people were in shul for over 2 hours, sort by day of week and only include regulars
---AS I did not see a way to include if a member is a regular. Also for the next question. Let me know if you have a way.
-select m.FirstName, m.LastName, m.DayOfWeek
-from Minyan m 
-where datediff(minute, TimeIn, TimeOut) > 120
-group by m.FirstName, m.LastName, m.DayOfWeek
-order by m.DayOfWeek
-
+ select m.FirstName, m.LastName, m.DayOfWeek, count(*) 
+ from Minyan m  where datediff(minute, TimeIn, TimeOut) > 120 
+ and datediff(day,TimeIn, getdate()) < 60 
+ group by m.FirstName, m.LastName, m.DayOfWeek 
+ having count(*) > 15 
+ order by m.DayOfWeek
 --8) How long did regulars wait around until is minyan started on average. Also show the max and min. Do not count anyone that joined a minyan which started before he arrived.
 select AvgWait = avg(datediff(minute, m.TimeIn, datetimefromparts(year(m.TimeIn), month(m.TimeIn), day(m.TimeIn), MinyanTime, 0, 0, 0 ))),
        MaxWait = max(datediff(minute, m.TimeIn, datetimefromparts(year(m.TimeIn), month(m.TimeIn), day(m.TimeIn), MinyanTime, 0, 0, 0 ))),
@@ -62,7 +61,8 @@ select sum(m.Aliya)
 from Minyan m 
 where year(m.TimeIn) = year(getdate()) and month(m.TimeIn) = month(getdate()) and day(m.TimeIn) = day(getdate())
 --12) Show the top ten spenders on Aliyas 
-select top 10 m.FirstName, m.LastName, m.Aliya
+select top 10 m.FirstName, m.LastName, sum(m.Aliya)
 from Minyan m
-order by m.Aliya desc
+group by m.FirstName, m.LastName
+order by sum(m.Aliya) desc
 
